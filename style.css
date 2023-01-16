@@ -1,0 +1,96 @@
+.body
+{
+    background-image: url(2022_11_05_22_37_IMG_0878.JPG);
+    padding: 50%;
+    /* margin: 0px; */
+    display: block;
+    margin: 0%;
+    
+}
+.box
+{
+    position: relative;
+    width: 950px;
+    height: 1200px;
+    border-radius: 20px;
+    background-image: url(2022_09_25_20_18_IMG_1145.JPG);
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+
+}
+.box::before{
+    content: '50px';
+    position:absolute;
+    width: 700px;
+    height: 10000px;
+    background-image: conic-gradient(transparent,transparent,transparent,red);
+    animation: rotate 4s linear infinite;
+
+}
+.box::after{
+    content: '';
+    position:absolute;
+    width: 1000px;
+    height: 5000px;
+    background-image: conic-gradient(transparent,transparent,transparent,blue);
+    animation: rotate 4s linear infinite;
+    animation-delay: -2s;
+}
+.box span{
+    position: absolute;
+    inset: 5px;
+    border-radius:16px ;
+    background-image: url(2022_09_25_20_18_IMG_1145.JPG);
+    z-index: 122;
+}
+@keyframes rotate 
+{
+    0%{
+        transform: rotate(0deg);
+
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.wife {
+	color: rgb(0, 0, 0);
+	position: absolute;
+	top: 185%;
+	left: 10px;
+	font-size: 30px;
+    font-style: italic;
+	opacity: 0;
+}
+
+.tell {
+	color: rgb(255, 0, 0);
+	position: absolute ;
+	top: 170%;
+	left: 70px;
+	font-size: 30px;
+
+}
+
+.tell:hover+.wife {
+	animation:show 5s linear;
+}
+
+@keyframes show {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.main1 {
+	margin: 50%;
+	width: 500px;
+}
+
+
+
