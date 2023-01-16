@@ -57,7 +57,7 @@
 .wife {
 	color: rgb(0, 0, 0);
 	position: absolute;
-	top: 185%;
+	top: 165%;
 	left: 10px;
 	font-size: 30px;
     font-style: italic;
@@ -67,7 +67,7 @@
 .tell {
 	color: rgb(255, 0, 0);
 	position: absolute ;
-	top: 170%;
+	top: 150%;
 	left: 70px;
 	font-size: 30px;
 
